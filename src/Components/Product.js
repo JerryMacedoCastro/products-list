@@ -26,15 +26,17 @@ const Product = () => {
     fetchProduct();
   }, [id]);
 
-  if (loading) return <p> Loading... </p>;
+  if (loading) return <div className="loading"> </div>;
   if (error) return <p>{error}</p>;
   if (product === null) return null;
   return (
     <dection className={`${styles.produto} animeLeft`}>
       <Head title={product.nome} description={product.descricao} />
-      {product.fotos.map((item) => (
-        <img key={item.titulo} alt={item.titulo} src={item.src} />
-      ))}
+      <div>
+        {product.fotos.map((item) => (
+          <img key={item.titulo} alt={item.titulo} src={item.src} />
+        ))}
+      </div>
       <div>
         <h1>{product.nome}</h1>
         <span className={styles.preco}>R$ {product.preco}</span>
