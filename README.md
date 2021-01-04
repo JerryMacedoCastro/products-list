@@ -1,3 +1,7 @@
+
+# General information
+Project has been created following one of the origamid courses. This is an use example of react routes.  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
