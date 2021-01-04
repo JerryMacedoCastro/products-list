@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import Contact from "./Components/Contact";
 import Products from "./Components/Products";
+import Product from "./Components/Product";
 import "./App.css";
 
 import React from "react";
@@ -11,6 +12,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Products} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/product/:id" component={Product} />
       </Switch>
     </div>
   );
